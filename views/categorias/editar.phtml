@@ -1,0 +1,17 @@
+<h1>Editar Categoria</h1>
+	<form action="<?php
+
+		/**
+             * editar.phtml
+             * 
+             * @author Jose Alejandro Chan Martin <alejandrochanmartin1@gmail.com>
+            */ 
+	 echo APP_URL."categorias/editar"; ?>" method="POST">
+	    <p>
+	        <label for="nombre">Nombre</label>
+	        <input type="text" name="nombre" value="<?php echo $this->categoria["nombre"]; ?>">
+	    </p>
+	    <p>
+	        <input type="submit" value="Guardar categoria">
+	    </p>
+	</form>
